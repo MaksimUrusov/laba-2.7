@@ -1,31 +1,28 @@
-#Вариан 18
-#РПО
-
+#Пер Об Разн
 
 if __name__ == '__main__':
     b = input('b = ')
-    d = input('d = ')
-    f = input('f = ')
+    c = input('c = ')
     g = input('g = ')
-    l = input('l = ')
-    u = input('u = ')
+    I = input('I = ')
+    w = input('w = ')
     e = input('e = ')
-    m = input('m = ')
-    n = input('n = ')
-    z = input('z = ')
     h = input('h = ')
-    i = input('i = ')
-    r = input('r = ')
-    x = input('x = ')
+    q = input('q = ')
+    d = input('d = ')
+    k = input('k = ')
+    l = input('l = ')
     y = input('y = ')
     a = input('a = ')
-    k = input('k = ')
-    s = input('s = ')
+    u = input('u = ')
+    v = input('v = ')
+    z = input('z = ')
 
-    mn_a = {b, d, f, g, l, u}
-    mn_b = {d, e, f, m, n, z}
-    mn_c = {h, i, r, x, y}
-    mn_d = {a, e, f, k, r, s, x}
+
+    mn_a = {b, c, g, I, w}
+    mn_b = {e, g, h, q, w}
+    mn_c = {c, d, k, l, y}
+    mn_d = {a, g, h, u, v, z}
     mn_u = set("abcdefghijklmnopqrstuvwxyz")
     a = mn_u.difference(mn_a)
     print('Множество A = ', mn_a)
@@ -33,7 +30,7 @@ if __name__ == '__main__':
     print('Множество C = ', mn_c)
     print('Множество D = ', mn_d)
 
-    mn_x = (mn_a.difference(mn_b)).intersection(mn_b.union(mn_d))
+    mn_x = (mn_a.intersection(mn_c)).union(mn_b)
     print('\nМножество X = ', mn_x)
 
     mn_y =(a.intersection(mn_d)).union(mn_c.difference(mn_b))
